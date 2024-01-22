@@ -1,63 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hockeys.com</title>
     <!-- tailwind and daisy ui -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- google font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
-<!-- icon -->
-<script src="https://kit.fontawesome.com/80488f97e5.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <nav class="w-[80%] mx-auto">
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Home</a></li>
-                  <li><a></a></li>
-                  <li>
-                    <a>About</a>
-                  </li>
-                  <li><a>Pages</a></li>
-                  <li><a href="">Blog</a></li>
-                  <li><a href="">Contact</a></li>
-                </ul>
-              </div>
-              <h1 class="font-extrabold text-3xl text-[#131318]">Hockey’s</h1>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <script
+      src="https://kit.fontawesome.com/80488f97e5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- navbar section -->
+    <nav class="w-[80%] mx-auto mt-10">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a class="text-red-600">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a>Pages</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contact</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-                <a class="mr-4" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a class="btn bg-red-600 text-white">Get Ticket</a>
-            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a></a></li>
+              <li>
+                <a>About</a>
+              </li>
+              <li><a>Pages</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
           </div>
+          <h1 class="font-extrabold text-3xl text-[#131318]">Hockey’s</h1>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-red-600">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="mr-4" href=""
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+          <a class="btn bg-red-600 text-white">Get Ticket</a>
+        </div>
+      </div>
     </nav>
-    <header>
-       
+    <!-- Banner section -->
+    <header class="w-[80%] mx-auto relative mt-16">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./Images/1.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./Images/1.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="./Images/1.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="./Images/1.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="hidden lg:block h-1/4 w-1/2 bg-black absolute end-0 bottom-8 right-8 rounded-lg text-white text-left px-8 pt-8"
+      >
+        <h1 class="font-extrabold text-[#ffffffd0]">
+          Meet all the heroes from the field
+        </h1>
+        <p class="font-medium text-[#ffffffd0]">
+          Encounter Nelson Mandela, an inspirational leader who fought against
+          apartheid, leaving a lasting legacy as a symbol of peace, justice, and
+          resilience.
+        </p>
+      </div>
+     <div class="lg:hidden sm:block h-28 w-full rounded-lg mt-4 mx-auto bg-black ">
+        <h1 class="font-extrabold  text-[#ffffffd0] text-left px-2 pt-2">Meet all the heroes from the field</h1>
+        <p class="font-medium text-[#ffffffd0] text-left px-2 pt-2 pb-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+     </div>
     </header>
-    <main>
-
+    <!-- Hockey club section -->
+    <main class="w-[80%] mx-auto">
+      <div class="text-center mt-32">
+        <h1 class="font-extrabold text-3xl">Professional Hockeys Club</h1>
+        <p class="font-medium pt-3">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat <br>
+          dolor. Purus urna in sit nullam proin.
+        </p>
+      </div>
+      <div class="flex-row lg:flex justify-around text-center mt-20">
+        <div class="sm:block mb-8">
+            <div class="radial-progress text-red-400" style="--value: 80" role="progressbar">
+                80%
+              </div>
+              <h1 class="font-semibold py-3">Prayer Facility</h1>
+              <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        <div class="sm:block mb-8">
+            <div class="radial-progress text-green-400" style="--value: 90" role="progressbar">
+                90%
+              </div>
+              <h1 class="font-semibold py-3">Experienced Coach</h1>
+              <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+       <div class="sm:block mb-8">
+        <div class="radial-progress text-yellow-400" style="--value: 77" role="progressbar">
+            77%
+          </div>
+          <h1 class="font-semibold py-3">Senior Player</h1>
+          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+       </div>
+       <div class="sm:block mb-8">
+        <div class="radial-progress text-blue-400" style="--value: 80" role="progressbar">
+            80%
+          </div>
+          <h1 class="font-semibold py-3">Training Ground</h1>
+          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+       </div>
+      </div>
     </main>
-    <footer>
-        
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
